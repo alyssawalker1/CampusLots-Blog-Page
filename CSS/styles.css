@@ -1,0 +1,171 @@
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    font-family: 'lora', sans-serif;
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    box-sizing: border-box;
+}
+
+:root {
+    --container-color:#ff2fa1;
+    --second-color: #fff;
+    --text-color: #172317;
+    --bg-color:#43d7e2;
+    align-items: center;
+}
+
+::selection{
+    color: var(--container-color);
+    background: var(--second-color);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width:100%;
+}
+
+section{
+    padding: 3rem 0 2rem;
+}
+
+.bar{
+    max-width: 1068px;
+    margin:auto;
+    width: 100%;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 157%;
+    z-index:200;
+    background: #fff;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+    margin-right: 640px;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.logo span{
+    color: var(--container-color);
+}
+
+.home{
+    width:100%;
+    min-height: 440px;
+    background: var(--bg-color);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text{
+    color: var(--second-color);
+    text-align: center;
+}
+
+
+.home-title{
+    font-size: 3.5rem;
+}
+
+.home-subtitle{
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    color: var(--second-color);
+    padding: 12px;
+    margin-top: -40px;
+}
+
+.heading span{
+    background: var(--container-color);
+    opacity: 0.35;
+    color: var(--second-color);
+    overflow: hidden;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 25px;
+    padding-bottom: 2px;
+}
+
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.about .row .picture{
+    flex:1 1 40rem;
+    position: relative;
+}
+
+.about .row .picture post-img{
+    width: 50%;
+    border: 1rem solid #fff;
+    border-radius: .5rem;
+    height: 50%;
+    object-fit: cover;
+}
+
+.about .row .body{
+    flex:1 1 40rem;
+}
+
+#pic{
+    margin-left: 20px;
+}
+
+#body{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.links-container{
+    background: #b3cfcf;
+    display: flex;
+    gap: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.links-container .links{
+    padding: 25px;
+    align-items: right;
+    flex-direction: row;
+}
+
+.links-container h1{
+    font-size: 50px;
+}
