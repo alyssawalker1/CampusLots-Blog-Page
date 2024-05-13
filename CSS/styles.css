@@ -10,22 +10,7 @@
     box-sizing: border-box;
 }
 
-.left, .right{
-    float: left;
-    width: 20%;
-}
 
-.main{
-    float: left;
-    width: 60%;
-}
-
-@media screen and (max-width: 800px)
-{
-    .left, .main, .right{
-        width:100%;
-    }
-}
 
 :root {
     --container-color:#ff2fa1;
@@ -57,9 +42,8 @@ section{
 }
 
 .bar{
-    max-width: 1068px;
-    margin:auto;
-    width: 100%;
+    width: 63%;
+    justify-content: center;
 }
 
 header{
@@ -72,12 +56,10 @@ header{
 }
 
 .nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
     padding: 18px 0;
-    margin-right: 640px;
 }
+
 
 .logo{
     font-size: 1.5rem;
@@ -171,6 +153,8 @@ header{
 .links-container{
     background: #b3cfcf;
     display: flex;
+    justify-content: center;
+    width: 100%;
     gap: 1rem;
     padding-top: 5px;
     padding-bottom: 5px;
